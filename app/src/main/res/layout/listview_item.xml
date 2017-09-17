@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/list_item">
+
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:id="@+id/nmusic_name"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textnum"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:id="@+id/music_singer"
+        android:layout_below="@+id/nmusic_name"
+        android:layout_alignStart="@+id/nmusic_name" />
+
+    <TextView
+        android:text="number"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:id="@+id/textnum"
+        android:textAlignment="viewStart"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+</RelativeLayout>

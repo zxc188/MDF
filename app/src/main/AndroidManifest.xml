@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.mdf">
+<uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:name=".MYapplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/bg"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="instanceUrl" android:value="http://123.207.149.200:88/api/v2/" />
+        <meta-data android:name="apiKey" android:value="a4f4f3df0a6d8f06ab55aa4bb92d96613709cabde8f2c1231e802994048253b1" />
+        <activity
+            android:name=".activitys.Login"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".service.Music_Service"
+            android:exported="true"
+            android:enabled="true"/>
+        <activity android:name=".activitys.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".activitys.Play_Activity"/>
+    </application>
+
+</manifest>
